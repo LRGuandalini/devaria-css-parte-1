@@ -1,0 +1,43 @@
+/*estilos do header*/
+
+header .link-logo {
+    display: block;
+    padding: 20px 25px;
+    border-bottom: 1px solid #25cbd3;
+}
+/*seguir a ordem do header*/
+header nav ul {
+     padding: 0;
+    text-align: center;
+}
+
+/*inline block deixa um do lado do outro sem ser em topicos, o margin coloca uma margem dentro do li do lado D*/
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li:not(:last-child) {
+    margin-right: 15px;
+}
+/*colocar cor branca nos links do menu, usar classe e respeitar a hierarquia das tags no caso o li e o a*/
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+} 
+
+.menu li a:hover {
+    color:#3bd42d;
+    text-decoration: underline;
+}
+/*colocar a condição da largura da tela q será no minimo 992px| ao usar o position relative vai poder alterar a posição da tela sem alterar o escopo*/
+@media screen and (min-width:992px) {
+    header {
+        position: relative;
+    }
+/*ao usar o absoluta ele não vai mudar a posição, é preciso definar o local q vai ficar o topo e se é D ou E*/
+    .menu{
+        position: absolute;
+        right: 2%;
+        top: 18%;
+    }
+}
