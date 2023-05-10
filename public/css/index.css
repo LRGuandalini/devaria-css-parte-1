@@ -1,5 +1,9 @@
 /*estilos da index*/
 
+main{
+    text-align: center;
+}
+
 .cover-container figure img {
     width: 100%;
 }

@@ -1,5 +1,6 @@
-/*Estilos Globais */
-html{
+/*Estilos Globais (usar quando não quero limitar a edição em apenas uma página
+ex: o fundo roxo, o logo da home, formatação dos títulos */
+html {
     height: 100%;
 }
 
@@ -8,4 +9,14 @@ body {
     font-family: sans-serif;
     color:white;
     margin: 0;
+}
+
+.title {
+    padding: 0 20px;
+    font-size: 1.75em;
+    text-transform: uppercase;
+}
+/*usar para formatar apenas os h1 que possuem a tag title*/
+h1.title {
+    margin: 40px auto 20px;
 }

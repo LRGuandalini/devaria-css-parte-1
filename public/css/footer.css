@@ -1,1 +1,18 @@
 /* Estilos do rodapé*/
+
+footer{
+    text-align: center;
+    border-top: 1px solid #f0f5ff;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    text-transform: lowercase;
+}
+/*psudo seletor, footer > section> span (paro no span que é o local que quero modificar, uso o first para mostrar que todo 1º elemento será o que quero editar*/
+footer section span:first-child {
+    color: #5e49ff;
+}
+/*nesse iremos selecionar o último elemnto*/
+footer section span:last-child {
+    color: #3bd42d;
+}
