@@ -20,3 +20,7 @@ body {
 h1.title {
     margin: 40px auto 20px;
 }
+
+.text-justify {
+    text-align: justify;
+}
